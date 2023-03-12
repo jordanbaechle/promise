@@ -24,7 +24,7 @@ timeline_clinical_all <-
       geom_point(aes(x=pre_metab2, y=id_patient), size=9, shape=1) +
       geom_point(aes(x=pre_ogtt, y=id_patient), size=4, shape=4) +
       scale_x_continuous(breaks=seq(-9, 9, 3)) +
-      ggtitle("Data report") +
+      ggtitle("Data report - from conversion") +
       xlab("Year of Study") + ylab("Patient ID") +
       theme_minimal() +
       theme(plot.title = element_text(face="bold"),
@@ -46,7 +46,7 @@ timeline_clinical_all <-
    geom_point(aes(x=pre_metab2_1, y=id_patient), size=9, shape=1) +
    geom_point(aes(x=pre_ogtt1, y=id_patient), size=4, shape=4) +
    scale_x_continuous(breaks=seq(-9, 9, 3)) +
-   ggtitle("Clinical Assessments of Healthy Controls") +
+   ggtitle("Data report - from start") +
    xlab("Year of Study") + ylab("Patient ID") +
    theme_minimal() +
    theme(plot.title = element_text(face="bold"),
